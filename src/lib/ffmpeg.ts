@@ -1,9 +1,12 @@
-import {FFmpeg} from '@ffmpeg/ffmpeg'
-import coreURL from '../ffmpeg/ffmpeg-core.js?url'
-import wasmURL from '../ffmpeg/ffmpeg-core.wasm?url'
-import workerURL from '../ffmpeg/ffmpeg-worker.js?url'
+import {FFmpeg} from '@ffmpeg/ffmpeg';
+import coreURL from '../ffmpeg/ffmpeg-core.js?url';
+import wasmURL from '../ffmpeg/ffmpeg-core.wasm?url';
+import workerURL from '../ffmpeg/ffmpeg-worker.js?url';
 
-let ffmpeg: FFmpeg | null
+///home/carlos/nlw/ai/aulas/upload-ai-web/src/ffmpeg/ffmpeg-core.js
+///home/carlos/nlw/ai/aulas/upload-ai-web/src/ffmpeg/ffmpeg-core.wasm
+///home/carlos/nlw/ai/aulas/upload-ai-web/src/ffmpeg/ffmpeg-worker.js
+let ffmpeg: FFmpeg|null
 
 export async function getFFmpeg() {
     if (ffmpeg) {
